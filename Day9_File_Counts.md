@@ -6,7 +6,7 @@ the following table.
 | Node          | Number of Files |
 | ------------- | --------------- |
 | cslinuxlab-00 |                 |
-| cslinuxlab-01 |                 |
+| cslinuxlab-01 | 13443           |
 | cslinuxlab-02 |                 |
 | cslinuxlab-03 |                 |
 | cslinuxlab-04 |                 |
