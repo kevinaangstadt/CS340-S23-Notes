@@ -26,7 +26,7 @@ the following table.
 | cslinuxlab-18 |                 |
 | cslinuxlab-19 |                 |
 | cslinuxlab-20 |                 |
-| cslinuxlab-21 |                 |
+| cslinuxlab-21 |72               |
 | cslinuxlab-22 |                 |
 | cslinuxlab-23 |                 |
 | cslinuxlab-24 |                 |
