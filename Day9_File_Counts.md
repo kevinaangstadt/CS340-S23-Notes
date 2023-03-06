@@ -7,7 +7,7 @@ the following table.
 | ------------- | --------------- |
 | cslinuxlab-00 |                 |
 | cslinuxlab-01 |                 |
-| cslinuxlab-02 |                 |
+| cslinuxlab-02 | 14216           |
 | cslinuxlab-03 |                 |
 | cslinuxlab-04 |                 |
 | cslinuxlab-05 |                 |
