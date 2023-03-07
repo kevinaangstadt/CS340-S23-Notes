@@ -15,7 +15,10 @@ of. This is done with the **HEAD** pointer.
 Now how are we going to be able to move around the tree with random access?
 To do this, each commit gets a unique identifier that we call its **hash**. 
 Hashes are a fixed length value and represent the data. 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6e5ae228f071d74405911c6bec36d3907af8b919
 <mark>TODO:</mark> clarify "represent the data"
 
 For convenience, we can make additional labels besides the **HEAD** in 
@@ -46,7 +49,10 @@ A merge combines commits and forms a new commit w/ the combined changes.
 This means the new commit will have *two parents*.
 
 <mark>TODO:</mark> add visual for merge
+<<<<<<< HEAD
 <mark>TODO:</mark> add code for merge
+=======
+>>>>>>> 6e5ae228f071d74405911c6bec36d3907af8b919
 
 ### Benefits of a Merge:
 - Full history of the repository is maintained (can see both parents).
