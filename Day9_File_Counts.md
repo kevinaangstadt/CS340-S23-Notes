@@ -12,7 +12,7 @@ the following table.
 | cslinuxlab-04 | 128767          |
 | cslinuxlab-05 |                 |
 | cslinuxlab-06 | 13200           |
-| cslinuxlab-07 |                 |
+| cslinuxlab-07 | 1106588         |
 | cslinuxlab-08 | 12057           |
 | cslinuxlab-09 | 9632            |
 | cslinuxlab-10 |                 |
