@@ -34,6 +34,6 @@ the following table.
 | cslinuxlab-26 |                 |
 | cslinuxlab-27 |        100      |
 | cslinuxlab-28 |13937            |
-| cslinuxlab-29 |                 |
+| cslinuxlab-29 |     9519        |
 | cslinuxlab-30 |  9665           |
 
