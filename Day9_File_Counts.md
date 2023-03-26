@@ -22,7 +22,7 @@ the following table.
 | cslinuxlab-14 |                 |
 | cslinuxlab-15 |                 |
 | cslinuxlab-16 | 15              |
-| cslinuxlab-17 |                 |
+| cslinuxlab-17 |213964           |
 | cslinuxlab-18 |                 |
 | cslinuxlab-19 |                 |
 | cslinuxlab-20 | 13991           |
