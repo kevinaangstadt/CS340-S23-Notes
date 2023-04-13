@@ -73,6 +73,37 @@ spec.loader.exec_module(i)
 
 print("Test module loaded...")
 
+# create coverage objcect
+cov = coverage.Coverage()
+
+
+# use the inspect module to determine what is available to us in another module
+for name, obj in inspect.getmembers(i):
+    # skip over non-class members
+    if not inspect.isclass(obj):
+        continue
+
+    # load each test with unittest
+    suite = unittest.defaultTestLoader.loadTestsFromTestCase(obj)
+
+    # loop through the tests in this suite
+    for test in suite:
+
+        # first erase any coverage information
+        cov.erase()
+
+        # start collecting coverage
+        cov.start()
+
+        # run a test and get its results
+        res = test.run()
+
+        # stop collecting coverage
+        cov.stop()
+
+        # create variables for use in FL class later
+        _, stmts, missing, _ = cov.analysis(args.target_file)
+
 
 
 
