@@ -33,4 +33,47 @@ Looked at a commit we knew had a bug but all tests were passing
   - GOAL: Localize which line the bug is on using our program
 
  Handling command lines using argparse, similar to GetOpt in Java
+
+This mostly includes what was written in class 20
+(further progress was made in class 21)
+ Localize.py:
+
+# a simple implementation of spectrum-based fault localization
+# using python coverage information
+# imports
+
+import argparse
+import collections
+import importlib
+import inspect
+import math
+import os
+import unittest
+
+import coverage
+
+# Command line handling
+# create a command line argument parser object
+parser = argparse.ArgumentParser()
+parser.add_argument("test_file", help="path to the test file to run")
+parser.add_argument("target_file", help="the file to localize")
+
+# parse the command line arguments
+args = parser.parse_args()
+
+print(f"The test file is {args.test_file} and the target file is {args.target_file}")
+
+# we need to import the test file as a module
+module = os.path.splitext(os.path.basename(args.test_file))[0]
+print(f"The module name is {module}")
+
+spec = importlib.util.spec_from_file_location(module, args.test_file)
+i = importlib.util.module_from_spec(spec)
+spec.loader.exec_module(i)
+
+print("Test module loaded...")
+
+
+
+
  
