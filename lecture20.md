@@ -144,6 +144,20 @@ for name, obj in inspect.getmembers(i):
         # create variables for use in FL class later
         _, stmts, missing, _ = cov.analysis(args.target_file)
 
+         if res.wasSuccessful():
+            # adding passed test
+            fl.passed(stmts, missing)
+        else:
+            # adding failed test
+            fl.failed(stmts, missing)
+
+# Printing passed and failed tests
+# A way to control our implementation because we knew only
+# 1 test was failing
+print(f"We passed {fl.totalpassed} tests and failed {fl.totalfailed} tests")
+
+
+
 
 
 
