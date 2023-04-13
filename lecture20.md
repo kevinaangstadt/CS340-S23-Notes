@@ -52,6 +52,43 @@ import unittest
 
 import coverage
 
+## adding FL class with methods
+# class to manage faults localization tallieds
+class FL:
+    def __init__(self):
+        # how many tests have passed and how many have failed
+        self.totalpassed = 0
+        self.totalfailed = 0
+
+        # keep track of lines that were executed on a failed test and a passing test
+        # and how many times each was executed
+        # create a dictionary, if key not found, lamda returns default value of o
+        # defualt dictionary calls the lamda function if key is not found
+        # the lamda returns the default value
+        self.failed_lines = collections.defaultdict(lambda: 0)
+        self.passed_lines = collections.defaultdict(lambda: 0)
+
+    # add passed
+    def passed(self, executable, missed):
+        self.totalpassed += 1
+        self._add_to_dict(self.passed_lines, executable, missed)
+    # add failed
+    def failed(self, executable, missed):
+        self.totalfailed += 1
+        self._add_to_dict(self.failed_lines, executable, missed)
+
+    def _add_line_to_dict(self, mapping, line):
+        if line not in mapping:
+            mapping[line] = 0
+        mapping[line] += 1
+
+    def _add_to_dict(self, mapping, exacutable, missed):
+        # tested lines are the difference between the executable lines and the missing lines
+        tested = set(exacutable).difference(set(missed))
+        for l in tested:
+            self._add_line_to_dict(mapping, l)    
+
+
 # Command line handling
 # create a command line argument parser object
 parser = argparse.ArgumentParser()
@@ -75,6 +112,9 @@ print("Test module loaded...")
 
 # create coverage objcect
 cov = coverage.Coverage()
+
+# Create fault localization object
+fl = FL()
 
 
 # use the inspect module to determine what is available to us in another module
