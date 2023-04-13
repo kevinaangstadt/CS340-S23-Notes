@@ -156,7 +156,17 @@ for name, obj in inspect.getmembers(i):
 # 1 test was failing
 print(f"We passed {fl.totalpassed} tests and failed {fl.totalfailed} tests")
 
+This is where we end class 20. 
 
+Localize.py does not yet have the ability to help us with that lines are
+interesting. This will be covered in class 21 were we will use
+tarantula and Ochia to help with weighting. 
+
+Key takeaway:
+ - Spectrum based fault localization
+ - Goal to rank lines where the bug/defect probably is
+   to help us to fault localize more efficiently
+ - Program not done yet
 
 
 
