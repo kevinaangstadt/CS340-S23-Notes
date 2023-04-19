@@ -1,5 +1,5 @@
 # Lecture 7 Notes
-# 2/8/23
+## 2/8/23
 
 ## Working With Git
 The history of a repository forms a tree, or an acyclic graph, where 
@@ -8,15 +8,18 @@ node (commit) in the tree. Since each node is a 'commit,' then at any
 point in time, our working directory is based on some node in the tree.
 
 So when we **commit**, we insert a new node, which become a child of 
-the commit the current working directory was based off of. We need a way 
-of marking the node or commit that the working directory is based off 
-of. This is done with the **HEAD** pointer. 
+the commit the current working directory was based off of. This means we 
+need a way of marking the node or commit that the working directory is based 
+off of. This is done with the **HEAD** pointer. 
 
-Now how are we going to be able to move around the tree with random access?
-To do this, each commit gets a unique identifier that we call its **hash**. 
-Hashes are a fixed length value and represent the data. 
+One benefit of git is that we should be able to randomly access any commit 
+in the tree. To do this, each commit gets a unique identifier that we call 
+its **hash**. Hashes are a fixed length value and represent the data.
 
 <mark>TODO:</mark> clarify "represent the data"
+
+We can **checkout** a commit to open up the version of the reposititory when 
+the commit was made. We do this with the command `git checkout <commit_hash>`.
 
 For convenience, we can make additional labels besides the **HEAD** in 
 order to keep track of parts of the version history. We can do this 
@@ -24,15 +27,18 @@ with **branches** and **tags**.
 
 ## Branches
 When we apply a branch label and checkout the branch, future commits 
-will move this label with the commits.
-
+will move this label with the commits. By default, we will have a **main** 
+branch. We can create a branch at the current head with `git branch <branch_name>`. ![Alt text](git%20branch%20(1).png)
 ## Tags
 When we apply a tag to a commit. It will act like a permanent label 
-for that commit. 
+for that commit. We can add a tag at the current head with `git tag <tagname>` 
+or at a specified commit with `git tag <tagname> <commit_hash>`. ![Alt text](git%20tag%20(2).png)
 
-If we checkout a tag or a commit hash, the head will detach from a 
-branch label when we commit, and not labels (apart from the HEAD) 
-will move.
+When we'd like to look at a specific commit, we can **checkout** that 
+commit with `git checkout <commit_hash>`. You can use a tag or branch name 
+instead of a commit hash to checkout a specific commit. If we checkout a tag 
+or a commit hash, the **HEAD** will detach from a branch label when we commit, 
+and no labels (apart from the HEAD) will move.
 
 ---
 
@@ -42,12 +48,11 @@ apply a bug fix. There are two ways to recombine branches: **merge**
 and **rebase**.
 
 ## Merge
-A merge combines commits and forms a new commit w/ the combined changes. 
-This means the new commit will have *two parents*.
+A merge combines commits and forms a new commit with the combined changes. 
+This means the new commit will have *two parents*. ![Alt text](git%20merge.png)
 
-<mark>TODO:</mark> add visual for merge
-<mark>TODO:</mark> add code for merge
-
+To merge, checkout the branch you'd like to merge to, and then use the 
+command `git merge <branch_name>`. In the case above, it would be `git checkout main; git merge feature`.
 ### Benefits of a Merge:
 - Full history of the repository is maintained (can see both parents).
 - Merges work well when collaborating because they are often few conflicts to resolve.
@@ -57,13 +62,11 @@ This means the new commit will have *two parents*.
 
 ## Rebase
 A rebase will 'copy' commits into another branch. This is like a 
-transplant. 
+transplant. ![Alt text](git%20rebase.png)
 
-<mark>TODO:</mark> add visual for rebase
-
-The command for the rebase above: `git rebase ` 
-
-More generally: `git rebase <branch_name>`
+To rebase a branch onto another branch, checkout the destination branch and then 
+run the command `git rebase <branch_name>`. In the case above, the commands would 
+be `git checkout main; git rebase feature`.
 
 ### Benefits of a Rebase:
 - Can keep the repository cleaner (changes are cleanly inserted without ties to parents).
@@ -87,7 +90,7 @@ the feature being added in the commit, as well as why the change is
 being made. The message should be able to stand on its own (no links 
 to other places) and shouldn't assume access to outside resources.
 
-Structure wise, one can this of a commit message being similar to a 
+Structure wise, one can think of a commit message being similar to a 
 letter. The first line of a commit message should be the subject of 
 the commit. Subsequent lines are the message body and should include 
 the what, why, etc., as well as list any known limitation to do with 
