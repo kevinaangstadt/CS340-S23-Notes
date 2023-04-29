@@ -36,5 +36,4 @@ Def: A **shell script** is a text file containing commands for a shell (e.g. bas
     - #!usr/bin/env python3 -> first line of a python file so that you can run as an executable.
       - python3 <script> -> to run python program.
   
-  
-  
+ 
