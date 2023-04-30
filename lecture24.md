@@ -21,3 +21,9 @@ Since code review is reliant on code comprehension and readability, what are som
   - Using similar variable names.
   - Use consistent indentation.
   - Use consistent spacing between blocks of code.
+## Design for Maintainability
+Code is considered *maintainable* if it is organized well and is readable. Some things we can do are:
+- Make it easy to change, extend, or refactor the program.
+- Break the code into intepentent modules, units, or functions.
+  - Avoid writing everything in your main program.
+  - Avoid code duplication (two or more of the exact same lines).
