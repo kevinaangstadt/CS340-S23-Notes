@@ -3,3 +3,8 @@
 &nbsp;
 ## **Overview**
 In lecture 24, we started thinking about software design and software design patterns. Diving into how we can design software to fit certain aspects of software development such as code review or maintainability.
+___
+&nbsp;
+## What's the idea here?
+70% to 90% of time in software development is spent on maintenance tasks. So, if you want to optimize your process of developing software to help you write new software faster, the maximum "speedup" or "imporvement" you can get is only 30%. But, we can design software to make a certain stage in the development lifecycle faster. This follows Amdahl's Law:
+- [Amdahl's Law](https://en.wikipedia.org/wiki/Amdahl%27s_law) is the formula which gives the theoretical speedup of the execution of a task at fixed workload that can be expected of a system whose resources are improved.
