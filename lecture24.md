@@ -12,3 +12,12 @@ ___
 Since code review is reliant on code comprehension and readability, what are some things we can do to help?
 - Avoid long lines of code.
 - Reduce the number of variables in a region of code.
+- Ensure to follow common naming patterns, for example:
+  - CamelCase (java).
+  - Snake_case (python).
+  - Hungarian notation (lAccountNumber where "l" is for "long").
+- Ensure to have ample comments and block comments/documentation.
+- Have blank lines to space out code properly and keep your notation consistent by:
+  - Using similar variable names.
+  - Use consistent indentation.
+  - Use consistent spacing between blocks of code.
