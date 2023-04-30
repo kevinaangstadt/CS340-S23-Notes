@@ -22,8 +22,15 @@ Since code review is reliant on code comprehension and readability, what are som
   - Use consistent indentation.
   - Use consistent spacing between blocks of code.
 ## Design for Maintainability
-Code is considered *maintainable* if it is organized well and is readable. Some things we can do are:
+Code is considered [*maintainable*](https://en.wikipedia.org/wiki/Maintainability) if it is organized well and is readable. Some things we can do are:
 - Make it easy to change, extend, or refactor the program.
 - Break the code into intepentent modules, units, or functions.
   - Avoid writing everything in your main program.
   - Avoid code duplication (two or more of the exact same lines).
+- Use object oriented design:
+  - Manages complexity well.
+  - Allows for unit testing.
+  - Breaks complex systems into simple pieces.
+  - For extensibility, we want to program to [interfaces](https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)):
+    - Which will provide a list of functions/methods that are supported.
+    - It will assume the absolute minimum about the classes we interact with.
