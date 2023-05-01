@@ -37,3 +37,14 @@ Code is considered [*maintainable*](https://en.wikipedia.org/wiki/Maintainabilit
 ## Software Design Patterns
 So, now we've taken a look at software design usages and examples. It's time to dive into software design patters. What is a [software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern) anyways?
 > *A software design pattern is a general, reusable solution to a commonly-occurring problem within a given context in software design (kinda like a recipe).*
+
+Essentially, we want to provide the best practices for problems that we've seen in the past. There is a book called "Design Patterns" by Erich Gamma, John Vlissides, Ralph Johnson, Richard Helm. The book is commonly referred to as the "Gang of Four", based off the four authors. They propose 23 different software design patterns, but for the sake of this lecture, we went over 9 of the 23 patterns:
+1. Strategy Pattern.
+2. Composite Pattern.
+3. Factory Pattern.
+4. Command Pattern.
+5. Adapter Pattern.
+6. Facade Pattern. 
+7. Observer Pattern.
+8. Iterator Pattern.
+9. Visitor Pattern.
