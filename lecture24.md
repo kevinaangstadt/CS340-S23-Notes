@@ -34,3 +34,6 @@ Code is considered [*maintainable*](https://en.wikipedia.org/wiki/Maintainabilit
   - For extensibility, we want to program to [interfaces](https://en.wikipedia.org/wiki/Interface_(object-oriented_programming)):
     - Which will provide a list of functions/methods that are supported.
     - It will assume the absolute minimum about the classes we interact with.
+## Software Design Patterns
+So, now we've taken a look at software design usages and examples. It's time to dive into software design patters. What is a [software design pattern](https://en.wikipedia.org/wiki/Software_design_pattern) anyways?
+> *A software design pattern is a general, reusable solution to a commonly-occurring problem within a given context in software design (kinda like a recipe).*
