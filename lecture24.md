@@ -48,3 +48,7 @@ Essentially, we want to provide the best practices for problems that we've seen 
 7. Observer Pattern.
 8. Iterator Pattern.
 9. Visitor Pattern.
+
+## Strategy Pattern
+This pattern is based on runtime factors to choose what algorythm/strategy to use. We use this when it is possible to receive a varying input that we won't know until runtime. This pattrern allows the calling of code to be more flexible and reusable. 
+- An example of the strategy pattern is a parking meter object that, given an amount of money, calculates an amount of time based on the parking costs at different times of the week.
