@@ -67,3 +67,6 @@ The Adapter pattern is essentially a class that allows two non-compatible classe
 ## Facade Pattern
 The Facade pattern is one class that encapsulates a handful of classes for simplifying them or making them easily readable. We use this pattern when we want to provide a simple interface to a complex solution for simplification and readability. It is also useful when there are many dependencies between classes of an abstraction (interface). The motivation to use this pattern is that it provides a simple single interface to work with and it shields its users from subcomponents.
 - For example, the Facade pattern is used in intrographics, which we learned in CS-140.
+## Observer Pattern
+The Observer pattern is where we use an object to maintain a list of dependents and notifies them automatically if any state changes (usually by calling one of their methods). This is often used for implementing event-handeling systems in event-driven software. The Observer pattern allows us to update the information of something in tandem with the event happeneing. 
+- An example of this is taking a keyboard input(s) and handing each input line as its own seperate "event".
