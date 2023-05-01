@@ -52,3 +52,6 @@ Essentially, we want to provide the best practices for problems that we've seen 
 ## Strategy Pattern
 This pattern is based on runtime factors to choose what algorythm/strategy to use. We use this when it is possible to receive a varying input that we won't know until runtime. This pattrern allows the calling of code to be more flexible and reusable. 
 - An example of the strategy pattern is a parking meter object that, given an amount of money, calculates an amount of time based on the parking costs at different times of the week.
+## Composite Pattern
+This pattern intends to compose objects into trees structures or boxes to represent part-whole hiearchies. Generally, this pattern is similar to the strategy pattern. Essentially, this pattern is picking a strategy to choose a strategy to use in a given context.
+- For example, a parking meter object and a time of date object, which alone are two strategy patterns. The composite pattern is a parking meter, with multiple strategy patterns (fees/charges) that depend on the time of day.
