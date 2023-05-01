@@ -70,3 +70,6 @@ The Facade pattern is one class that encapsulates a handful of classes for simpl
 ## Observer Pattern
 The Observer pattern is where we use an object to maintain a list of dependents and notifies them automatically if any state changes (usually by calling one of their methods). This is often used for implementing event-handeling systems in event-driven software. The Observer pattern allows us to update the information of something in tandem with the event happeneing. 
 - An example of this is taking a keyboard input(s) and handing each input line as its own seperate "event".
+## Iterator Pattern
+The Iterator pattern let's us traverse elements of a collection or data structure without exposing its underlying representation. We use this when we want to iterate through elements in different data structures. This is beneficial when we need to easily access elements in a collection. 
+- For example, we can have different iterator objects for traversing trees which encapsulates traversal details. Different iterator objects could represent things like depth-first traversal, breadth-first traversal, or level order traversal.
