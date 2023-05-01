@@ -55,3 +55,6 @@ This pattern is based on runtime factors to choose what algorythm/strategy to us
 ## Composite Pattern
 This pattern intends to compose objects into trees structures or boxes to represent part-whole hiearchies. Generally, this pattern is similar to the strategy pattern. Essentially, this pattern is picking a strategy to choose a strategy to use in a given context.
 - For example, a parking meter object and a time of date object, which alone are two strategy patterns. The composite pattern is a parking meter, with multiple strategy patterns (fees/charges) that depend on the time of day.
+## Factory Pattern 
+The Factory pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. The Factory method lets a class defer instantiation it uses to subclasses. We use this on functions of methods that run defferent commands based on what input is given.
+- An example is a valueOf() method which exists in String and wrapper classes, like Integer and Boolean, and used for type conversion i.e. converting String to Integer or String to double in java.
