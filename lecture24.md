@@ -73,3 +73,6 @@ The Observer pattern is where we use an object to maintain a list of dependents 
 ## Iterator Pattern
 The Iterator pattern let's us traverse elements of a collection or data structure without exposing its underlying representation. We use this when we want to iterate through elements in different data structures. This is beneficial when we need to easily access elements in a collection. 
 - For example, we can have different iterator objects for traversing trees which encapsulates traversal details. Different iterator objects could represent things like depth-first traversal, breadth-first traversal, or level order traversal.
+## Visitor Pattern
+The Visitor pattern allows us to define and add new functions or methods to object structures without modifying the code of the structure. We want to use this pattern when we want to define a new operation over a structure that is rarely changed or is unchangable. The motivation of using this is the ability to easily add new operations to complex data structures. 
+- An example of this is a set of classes that have two different interfaces and we want a function that can be used for any class in the set. Define a Visitor class with methods to be used anywhere in the class structure.
