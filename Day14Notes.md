@@ -50,3 +50,26 @@
     - In stats -> Increase sample size or know something about the distribution.
     - In software Engineering -> We don't know possible distributions.
 
+## **Kinds of Testing to Assess External Quality**
+----
+- Alpha Testing -> Done by developers.
+- Beta Testing -> Done by external users.
+    - How does this information get back to the developer?
+        - Bug report.
+        - Automatic data collection and crash reports.
+- A/B Testing -> Release two variables of software
+
+#### **Mutation Testing**
+- A seemingly unrelated question: How do you tests if a bloodhound is any good?
+    - Intentionally hide person and see if the hound can find them.
+- How can we test if a test suite is any good?
+    - Intentionally hide bugs in the code and see if the tests can find them.
+
+#### Definition
+- **Defect Seeding** is the process of adding defects/bugs to the code.
+    - Typically similar to real bugs.
+    - Done by changing or mutating the source code.
+
+#### Definition
+- **Mutation Analysis/Testing** is defined as intentionally seeding defects and counting how many are found.
+    - It is only as good as the bugs that are seeded.
