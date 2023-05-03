@@ -22,3 +22,31 @@
 - 100% branch coverage typically implies 100% line coverage.
 - Branch coverage subsumes line coverage.
     - Comes at a cost: branch coverage is "more expensive" in that it is harder for a test suite to house high branch voverage than it is to have high line coverage.
+
+#### **Other Types of Coverage**
+- Function Coverage
+- Condition Coverage
+- Modified Condition / Decision Coverage (MC/DC)
+    - Loosely: Function + Branch
+
+**Is it worth maximizing these metrics?**
+- Yes - It finds more corner case bugs in practice.
+
+## **Alternative View on Testing**
+----
+- Bugs experienced by users are the bugs that matter.
+- If user-experienced bugs are the ones that matter then testing should be devoted to sampling these inputs.
+    - Exhaustive testing is usually too expensive.
+- Potential options
+    - Uniform random sample
+    - Sample from most common
+    - Sample from most harmful
+- The problem with sampling
+    - Bias or error
+- Testing gives us confidence the same way sampling or pollion for a survey gives us confidence.
+- Sampling Bias - Some members of a population are less likely to be selected.
+    - Unrepresentative of that segment of population.
+- Solutions to Sampling Bias
+    - In stats -> Increase sample size or know something about the distribution.
+    - In software Engineering -> We don't know possible distributions.
+
