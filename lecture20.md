@@ -1,6 +1,9 @@
 # Notes Lecture 20
 # 4/3/2023
 
+## Overview
+In class 20 we started with a short summary of class 19. Then we talked about different techniques of fault localization. We touched on the problem of scale with big code bases and talked about spectrum based fault localization as a possible solution for this. For the rest of the class we wrote a program: localize.py to implement spectrum based fault localization. 
+
 Quick Summary of class 19: 
 - fault localization - implicating lines of code in a bug/fault/defect
 - techniques:
