@@ -4,14 +4,14 @@
 ## Overview
 In class 20 we started with a short summary of class 19. Then we talked about different techniques of fault localization. We touched on the problem of scale with big code bases and talked about spectrum based fault localization as a possible solution for this. For the rest of the class we wrote a program: localize.py to implement spectrum based fault localization. 
 
-Quick Summary of class 19: 
+## Quick Summary of class 19: 
 - fault localization - implicating lines of code in a bug/fault/defect
 - techniques:
     - add print statements -> detect where code is reaching, risk of
       flushing output buffers
     - using debugger
 
-Code Tracing
+## Code Tracing
 - Problem of scale in big code bases
 
 Instead, write script that can help with this
@@ -20,7 +20,7 @@ Bug will be in covered lines
  - deprioritize passing test coverage
  - prioritize failing test coverage
 
- Class 20:
+ ## Class 20:
  Example of writing a tool that can help us with automitcally filter bugs.
  Wrote Python script that can run unittest and calculate coverage 
  and weight. 
@@ -39,8 +39,10 @@ Looked at a commit we knew had a bug but all tests were passing
 
 This mostly includes what was written in class 20
 (further progress was made in class 21)
+
  Localize.py:
 
+```
 # a simple implementation of spectrum-based fault localization
 # using python coverage information
 # imports
@@ -55,10 +57,11 @@ import unittest
 
 import coverage
 
-## adding FL class with methods
+# adding FL class with methods
 # class to manage faults localization tallieds
 class FL:
     def __init__(self):
+        
         # how many tests have passed and how many have failed
         self.totalpassed = 0
         self.totalfailed = 0
@@ -159,13 +162,15 @@ for name, obj in inspect.getmembers(i):
 # 1 test was failing
 print(f"We passed {fl.totalpassed} tests and failed {fl.totalfailed} tests")
 
-This is where we end class 20. 
+````
+
+## This is where we end class 20 
 
 Localize.py does not yet have the ability to help us with that lines are
 interesting. This will be covered in class 21 were we will use
 tarantula and Ochia to help with weighting. 
 
-Key takeaway:
+## Key takeaway:
  - Spectrum based fault localization
  - Goal to rank lines where the bug/defect probably is
    to help us to fault localize more efficiently
