@@ -1,5 +1,9 @@
 # Lecture 23 notes
 
+## Overview
+In this lecture, we learned about Delta Debugging which was used in 
+Project 2. We also learned about one-minimal and local minimums.
+
 ## Delta Debugging - Glorified binary search
 Given:
 - a set C= {C1, C2... Cn} 
