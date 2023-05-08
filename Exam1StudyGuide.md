@@ -1,6 +1,9 @@
 # Exam 1 Study Guide
 ## For exam on 01/03/2023
 
+# Overview
+This document is the class notes and guide for the Unit 1 Exam on 3/1/23. The implementation of this document can be used to prepare for the exam. The exam will cover everything tuaght in class up to this point. First off this document will go over the topics covered and then delve into more specific information.
+
 ## Topics
 - Software vs. programs
 - Time allocation to various SE tasks
