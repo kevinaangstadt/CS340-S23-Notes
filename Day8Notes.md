@@ -11,7 +11,7 @@ This lecture begins with a warmup and quick review of commit ettiquette. We cont
 
 ---
 
-### **Review - good ettique for commits**
+### **Review - good ettiquette for commits**
 1. Commit message should describe contents of changes
 2. Seperate out functionality/formatting changes
 3. Smaller commits
@@ -72,7 +72,7 @@ We won't be able to push
 
 ---
 
-### **Challege:** 
+### **Challenge:** 
 #### **How do we commit to a repo that does not grant us write permission**
     Pull Request: Request for a developer to pull your commits into their upstream-repo
 
