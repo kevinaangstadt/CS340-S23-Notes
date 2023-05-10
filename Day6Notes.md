@@ -1,7 +1,9 @@
 # Lecture 6 - 2/6/2023
 Catya Temkin
 
-Summary: Version control systems and useful related git commands. 
+## Overview ##
+In this lecture, we discussed Version Control Systems and useful related git commands. I will go more in depth with
+Centralized Systems versus Distributed Systems along with their pros and cons.
 
 ## Version Control Systems
 - Simplify maintaining code 
