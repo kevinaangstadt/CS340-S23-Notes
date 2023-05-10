@@ -37,16 +37,16 @@ Steps to reproduce $\rightarrow$ minimized (also apply to input data)
 Ex/ FF $\rightarrow$ print page causes a crash
 - What part of the HTML is causing the crash?
 
-Another problem where minimization ccan help:
-- Yesteray your code worked, today it does not
+Another problem where minimization can help:
+- Yesterday your code worked, today it does not
 - Why? - a number of commits
   - which commit?
 
 >#### Definition
->**Causality** is influence by which one evenet, process, state or object (a cause) contributes to the production of anothe event, process, state or object,   (an effect) where the cause is partly responsible for the effeect and the effect is partly dependent on the cause
+>**Causality** is influence by which one event, process, state or object (a cause) contributes to the production of another event, process, state or object, (an effect) where the cause is partly responsible for the effect and the effect is partly dependent on the cause
 >#### Definition
 >**Counterfactual** theories of causation:
->If A had not ccurred, then C would not have occurred
+>If A had not occurred, then C would not have occurred
 - In software - the cause of a bug is precisely the difference between two versions
 
 Can we find the commit that causes the failure?
