@@ -1,7 +1,6 @@
 # **Lecture 1**
 **January 18, 2023**
 
-
 "Half of software engineering is crap" - popular opinion
 
 "70-90% of software engineering is crap" - Kevin
@@ -12,7 +11,7 @@
 - How to use a computer
 - How to collaborate on files
 - How to gain confidence that your SW will work
-- What do we do when it doesn't work?
+- What do we do when it doesn't work?`
 - How to plan a SW prokect
 
 **Program** - collection of instructions on ordered operations for a computer to perform a specific function or task
@@ -43,12 +42,18 @@ Over the total lifetime of a software package, over 70-90% of budget/time is spe
 
 ### **Famous Software Failures**
 - Power &rarr; Northeast blackout of 2003 
-- Defense &rarr; Patriot Missile System Error 
+    - approximately 50 million people without power
+- Defense &rarr; Patriot Missile System Error
+    - 28 deaths due to rounding errors
 - Driving &rarr; Bookout vs. Toyota Motor Corp.
+    - Toyota tried to blame faulty software that caused Toyota vehicle to suddenly accelerate and kill a woman on user error
 - Finance/Privacy &rarr; Equifax Security Breach
+    - personal information of 143 million people leaked
 - Healthcare &rarr; Healthcare.gov rollout 
+    - website was not built to handle the necessary traffic and stopped working 2 hours after launch
 - Space &rarr; ESA Ariane 5 flight 501
+    - 40 seconds after flight sequence initiation, launcher veered off course and exploded
 - Aviation &rarr; 737 MAX MCAS
+    - automatci flight stabilizing feature unable to be shut off by crew after recieving faulty inputs, killed 346 people over 2 separate occasions 
 - Medicine &rarr; Therac-25
-
-What happened? How was software involved? Why was this so bad/what implications are there today?
+    - computer controlled radiation therapy, error resulted in 6 people dead
