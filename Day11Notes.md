@@ -58,9 +58,9 @@ The difference here is abstraction.
 _How do we work around challenges?_
 different hardware configurations
 
-what if the tool is broken?
+What if the tool is broken?
 
-what if the _test_ is broken?
+What if the _test_ is broken?
 
 >**Mocking** is a common tool in software engineering when it comes to this challenge. Mocking is used to simulate objects that mimic the behavior of real objects in a controlled way. 
 
