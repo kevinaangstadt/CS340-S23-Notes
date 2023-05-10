@@ -74,7 +74,9 @@ We won't be able to push
 
 ### **Challenge:** 
 #### **How do we commit to a repo that does not grant us write permission**
-    Pull Request: Request for a developer to pull your commits into their upstream-repo
+> **Definition**
+>
+>**Pull Request**: Request for a developer to pull your commits into their upstream-repo
 
 FIXME: ADD FLOW CHART!!!
 
@@ -95,8 +97,10 @@ FIXME: ADD FLOW CHART!!!
 Want to deliver high-quality software at low cost  
 How do we increase, asses, and assure software quality?
 
-    Quality Assurance: is the maintenance of a desired level of 
-    quality in a service or product, especially by means 
-    of attention to every step of the process of 
-    delivery or production.
+> **Definition**
+>
+>**Quality Assurance**: is the maintenance of a desired level of 
+>quality in a service or product, especially by means 
+>of attention to every step of the process of 
+>delivery or production.
 
