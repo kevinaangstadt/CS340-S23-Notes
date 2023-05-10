@@ -1,5 +1,8 @@
 # ***Day 8 Outline - 2/13/23***
 
+## **Overview**
+This lecture begins with a warmup and quick review of commit ettiquette. We continue on with learning about git repos and syncing changes. Next is the workflow for git repos and the beginning of quality assurance.
+
 ### **Today's warmup**
 - 2 branches
 - 3 commits to main
