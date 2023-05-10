@@ -78,7 +78,7 @@ We won't be able to push
 >
 >**Pull Request**: Request for a developer to pull your commits into their upstream-repo
 
-FIXME: ADD FLOW CHART!!!
+![image](Day_8_flowchart.png)
 
 ---
 
