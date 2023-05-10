@@ -1,6 +1,9 @@
 # Exam 1 Study Guide
 ## For exam on 01/03/2023
 
+# Overview
+This file reviews the concepts and ideas covered from the beginning of the semester to 3/1/23. The document follows the format we followed in the class prior to the exam. First off all the topics we covered are listed and then it delves into more specific info, such as relevant commands. 
+
 ## Topics
 - Software vs. programs
 - Time allocation to various SE tasks
@@ -31,11 +34,11 @@
 
 _Software vs. Programs_
 
-> ### Program
->Collection of instructions or ordered operations for a computer to preform a function or task
+> ### Definition
+>Program - Collection of instructions or ordered operations for a computer to preform a function or task
 
->### Software
->Collection of programs procedures, data, or instructions that work together to provide a specified functionality
+>### Definition
+>Software - Collection of programs procedures, data, or instructions that work together to provide a specified functionality
 
 - Similarities and differences:
     - similarities: programming languages, coding
@@ -211,8 +214,8 @@ ____
 
 - Developers want to deliver high quality software at low cost
 
->### Quality Assurance  
->The maintenance of desired level of quality in a service or product, especially by means of attention to every stage of the delivery or production
+>### Definition 
+> Quality Assurance - The maintenance of desired level of quality in a service or product, especially by means of attention to every stage of the delivery or production
 
 - Two types of quality
     1. External: customer facing, essentially does the software do the right thing
@@ -266,3 +269,6 @@ ____
     - implicit control flow: hidden if statements
     - interest test cases cause implicit or explicit changes of control → causes different branches of conditionals to execute
     - branch coverage: total number of conditional branches covered by test suite
+
+# Something Fun!
+![Exam Meme](https://cs.uwaterloo.ca/~dtompkin/teaching/memes/cs136-w18-meme-09.jpg "Funny pic")
