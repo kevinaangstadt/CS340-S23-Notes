@@ -9,7 +9,7 @@ To use Git Bisect, we first need to identify a known good commit and a known bad
 
 ## Steps to set up Ruby environment:
 
-'''
+```
 sudo apt update
 sudo apt install git curl autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
 curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
@@ -18,25 +18,33 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 source ~/.bashrc
 rbenv install 2.7.8
 rbenv global 2.7.8'
-'''
+```
 
 When using bisect, we need the last commit where the code worked and the first commit where the bug appeared. Once we have these, we can use the following command to start the bisect process:
 
-'git bisect start' - start a bisecting search
+To start a bisecting search
+`git bisect start`
 
 After running this command, Git Bisect will checkout a middle commit between the bad and good commits and ask us to test if the bug is present or not. We can use the following commands to mark the current commit as good or bad, respectively
 
-'git bisect good' - mark a commit as "good"
-'git bisect bad'  - mark a commit as "bad"
+To mark a commit as "good"
+`git bisect good`
+
+To mark a commit as "bad"
+`git bisect bad`  
 
 Based on our response, Git Bisect will then checkout another commit for us to test, and the process will continue until the faulty commit is identified
 
 ## Manually using Git Bisect
 Identify a "good" commit where the issue doesn't exist and a "bad" commit where the issue exists.
 
-Run git bisect start
-Mark the "good" commit with 'git bisect good <commit>'
-Mark the "bad" commit with 'git bisect bad <commit>'
+`git bisect start`
+
+Mark the "good" commit with 
+`git bisect good <commit>`
+
+Mark the "bad" commit with 
+`git bisect bad <commit>`
 
 Git will automatically checkout a new commit and prompt to test whether it's "good" or "bad".
 Continue marking "good" or "bad" until the first commit that has the issue is identified.
@@ -45,18 +53,23 @@ Run git bisect reset to exit the search.
 ## Automatically using Git Bisect
 Git Bisect can also be automated by using a script to perform the testing and marking of commits. This is useful when the testing process is time-consuming or requires human intervention. To automate Git Bisect, we need to write a script that returns a zero exit status if the bug is not present and a non-zero exit status if the bug is present. We can then use the following command to start the bisect process
 
-Run git bisect start
-Mark the "good" commit with 'git bisect good <commit>'
-Mark the "bad" commit with 'git bisect bad <commit>'
-To automate the search 'git bisect run <script>'
+Run -- `git bisect start`
+Mark the "good" commit with 
+`git bisect good <commit>`
+Mark the "bad" commit with 
+`git bisect bad <commit>`
+To automate the search
+`git bisect run <script>`
 
 Example:
-'git bisect start'
-'git bisect good'  ---------mark a commit as good
-'git bisect bad'   ------------ mark bad
-'git bisect run <script>'  
-** Exit 0 “good”
-** Exit 1 “bad”
+```
+git bisect start
+git bisect good
+git bisect bad   
+git bisect run <script>
+``` 
+* Exit 0 “good”
+* Exit 1 “bad”
 
 Git Bisect will then use the script to test and mark the commits until the faulty commit is identified
 
@@ -68,21 +81,21 @@ Using phony on our Linux machine.
 
 First, we need to checkout the version of phony that will work for the example we are doing, and we will use its tag. The point of tag in a repository is used as a permanent name for the one of the commits. Like a version of phony:
 
-'git checkout v1.9.0'
+`git checkout v1.9.0`
 
 Format command in phony will take a string of different phone numbers and change it to a correct format of phone number:
 
-'ruby -e “require “./lib/phony”; puts Phony.format(“13152291875”);’' ------------------------ +1 315 229 1875
+`ruby -e “require “./lib/phony”; puts Phony.format(“13152291875”);’` ------------------------ +1 315 229 1875
 
 The normalize command will take a string of phone number and change it back to strings of numbers:
 
-'ruby -e “require “./lib/phony”; puts Phony.normalize(“+1(315) 229-1875”);’' ----------------- 13152291875
+`ruby -e “require “./lib/phony”; puts Phony.normalize(“+1(315) 229-1875”);’` ----------------- 13152291875
 
 ## Example using normalize:
-'''
+```
 git checkout v2.10.0
 ruby -e “require “./lib/phony”; puts Phony.normalize(“999”);’ 
-'''
+```
 
 This broke the program, meaning some where between the commit tag v1.9.0 and the commit tag v2.10.0 , we have a commit that broke this functionality for normalize(“999”).We want to know where along the way this broke or stopped working and to do that, we can do a binary search.
 
