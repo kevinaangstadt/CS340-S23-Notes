@@ -16,6 +16,20 @@ Interesting in monotonic, unanmbigous, and consistent
 4. Interesting is consistent 
     - Interesting(x) = YES or Interesting(x) = no
 
+## Sudo Code for Delta Debugging
+```
+DD (subset):
+    if n==1:
+        return (subset1)
+    let p1 = {subset, subset(n/2)}
+    let p2 = {subset(n/2+1) subset(n)}
+
+    if interesting (p1) = yes:
+        return DD (p1)
+    else:
+        return DD(p2)
+```
+
 Why can't <br /> 
 Interesting (P1) = YES and Interesting (P2) = YES
 because unanmbiguous Interesting(P1 ∩ P2) = {}
@@ -26,5 +40,4 @@ Interesting(P1) = NO and Interesting(P2) = YES because consistent: <br />
 If this is the case, By monotone:
 <br /> no subset if interesting, the interesting subset is a comnination of elements from P1 and P2
 
-# Lecture 23 notes outline
 
