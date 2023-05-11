@@ -104,3 +104,4 @@ How do we increase, asses, and assure software quality?
 >of attention to every step of the process of 
 >delivery or production.
 
+![Alt Text](https://ih1.redbubble.net/image.679500044.5211/st,small,507x507-pad,600x600,f8f8f8.u4.jpg)

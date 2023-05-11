@@ -138,3 +138,7 @@ Try random things and see what happens:
         crashes = [(data,result) for (data,result) in runs
                     if result.returncode != 0]
         print("crashes :", len(crashes))
+
+# Something funny I found on git
+
+![Fun git stuff!!!](https://drive.google.com/uc?id=1huyHdg9s2cNMhDcz3gfrRHsfJB0vwwW3)

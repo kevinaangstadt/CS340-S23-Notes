@@ -86,3 +86,7 @@ If a regression is when something "goes backwards", regression testing is testin
 > A __test fixture__ surrounds a test case to provide code that is run before and after each test case.
 
 - Test fixtures are often used for set up (before) and clean up (after).
+
+---
+## A Fun Meme
+[![A fun meme](Day10Meme.png "Meme")](https://medium.com/codex/10-best-programming-memes-1-cec344afc19a)
