@@ -1,5 +1,9 @@
 # Lecture 23 notes
 
+## Overview
+In this lecture, we learned about Delta Debugging which was used in 
+Project 2. We also learned about one-minimal and local minimums.
+
 ## Delta Debugging - Glorified binary search
 Given:
 - a set C= {C1, C2... Cn} 
@@ -26,5 +30,5 @@ Interesting(P1) = NO and Interesting(P2) = YES because consistent: <br />
 If this is the case, By monotone:
 <br /> no subset if interesting, the interesting subset is a comnination of elements from P1 and P2
 
-# Lecture 23 notes outline
+
 

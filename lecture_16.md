@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 ### Overview 
 This contains an  overview of Day 16 in class. There is an in class  github activity and a bit more on CI/CD. 

@@ -30,8 +30,13 @@ Warm-up: Set up your linux machine to support ssh with github
     - How do we ensure and assure maintainability?
         - Human code review
         - Code anlysis tools and "linters"
+            - **Linter**: A simple checker that checks some property within the code
+            - **Code Analysis Tool**: More indepth by parsing the code and analyzing the code itself.
+                - An example of this is a type checker
         - Use programming idioms and design patterns
+            - Defining classes or objects using predsigned pattern is an example of a design pattern
         - Follow local coding standards
+            - A company style guide would be an example of a local coding standard
 </br>
 
 ### External Quality
