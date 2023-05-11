@@ -23,6 +23,8 @@ Mutation operators → templates for replacing code
 * (iv) f(); g(); → g(); f();
 * (v) x = y  → y = x;
 
+## MAIN BODY
+
 - Programs can be represented by trees → Abstract Syntax Trees (ASTs)
 - After we apply a mutation operator, we have a mutant or variant of the project
 - The order is the # of mo(changes) applied to a program
@@ -56,7 +58,9 @@ Mutation operators → templates for replacing code
 
 ## **Continuous Integration**
 #### Definition
--Practice of integrating code changes into the main branch of a shaped repository often automatically testing each change on both commits and merges, and automatically building each version .
+-Practice of integrating code changes into the main branch of a shaped repo
+-Often automatically testing each change on both commits and merges, 
+and automatically building each version .
 -Push multiple times a day/ merge rebase into the main branch
 -Encourages best practices with commits
 -Reduce # of long lived branches 
