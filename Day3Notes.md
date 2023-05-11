@@ -1,7 +1,10 @@
-#Lecture 3 - 1/25/23 - Outline
+# Lecture 3 - 1/25/23
+
+### Overview
+This lecture focuses on defining new bash commands and scripting practices. Many useful bash commands are defined that we commonly used throughout the rest of the course.
 
 
-###Basic Linux Commands:
+### Basic Linux Commands:
 #### Definition
 **curl** - capture url
 #### Definition
@@ -44,7 +47,7 @@
 **uniq** - only return unique elements (no repeats)
 
 
-###For Loop Structure:
+### For Loop Structure:
 	for i in {start..end..step}
 	do
 		echo $i
@@ -54,7 +57,7 @@
   by which to iterate the current index at each step.
 
 
-###Accessing Variable Values:
+### Accessing Variable Values:
 	To access the values of variables in our commands, we use the dollar sign character, $,
 	followed by the name of our variable.
 	
@@ -67,7 +70,7 @@
 	output.
 
 
-###Connecting to your Linux Lab Machine:
+### Connecting to your Linux Lab Machine:
 	You will be assigned a local machine at the beginning of the year, and must enter your 
   information according to the below format and enter your password when prompted.
 
@@ -75,7 +78,7 @@ Format:
   YOUR_USERNAME@stlawu.edu@cslinuxlab-YOUR_NUMBER.stlawu.local
 
 
-###One-Line Command Format:
+### One-Line Command Format:
 	Commands such as the for loop illustrated above can be executed in one line when 
   utilizing the semicolon character. For example, the following for loops are equivalent:
 
@@ -87,13 +90,13 @@ for f in random
 for f in random; do echo $f; done
 
 
-###Manipulating and Accessing files in pwd:
+### Manipulating and Accessing files in pwd:
   You can view the contents of your pwd with the ls command, and you can copy, move or remove any file or directory in the pwd with the 
   commands cp, mv, and rm respectfully. You can also back out a level from your current directory with the command cd .., as well as 
   move to other subdirectories via cd DIR_NAME.
 
 
-###For Loop File Globbing:
+### For Loop File Globbing:
 for i in random/*
 	do
 	echo $i
@@ -104,13 +107,13 @@ in which the use of a wildcard character such as an asterisk gets expanded upon 
 files and directories.
 
 
-###Using Man for Command Instruction
+### Using Man for Command Instruction
 	The man command is useful for finding information regarding any of the linux 
   commands. This command provides you with the name of the command, formatting,
   uses, and much more helpful information.
 
 
-###Pattern-Matching with grep
+### Pattern-Matching with grep
   The pattern matching command grep can be utilized in combination with escape characters to match file names or contents 
   based on the rules specified by the escape characters. For example, including a carat (^) at the beginning of the string 
   following grep will ensure that we pattern match files whose names begin with the specified string. Similarly, we can 
@@ -123,7 +126,7 @@ files and directories.
 Ex) find random | grep ^\\.ac$; output -> files that begin and end with the string “.ac”.
 
 
-###Command Substitution
+### Command Substitution
 	Using the same method by which we accessed our values of previously defined 
   variables, we can also run a command and provide it’s output as text in the command 
   line arguments for another command.
@@ -143,17 +146,17 @@ Ex) xargs basename | grep ^9;
   pattern-match the result for names beginning with the character 9.
 
 
-###Conditional Statement Structure
+### Conditional Statement Structure
 	Conditionals work by ending the statement with if in reverse (fi).
 Ex) if [ -f $f ]; then do echo $f; fi;
 
 
-###Exit Code
+### Exit Code
 You can view the exit status of a program’s execution using echo $?
-####$? - Exit code of previously executed program, 0 upon success and failure otherwise.
+#### $? - Exit code of previously executed program, 0 upon success and failure otherwise.
 
 
-###Redirecting Output (Standard and Error)
+### Redirecting Output (Standard and Error)
 	You can redirect output from a program into a file of your choosing using the greater than symbol.
 Ex) find random > randomfiles.txt
 
