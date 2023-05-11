@@ -10,7 +10,7 @@ oracle problems, path predicates, and fuzz testing.
 
  - Why is this a problem we need to solve?
          - CI/CD + big feature
- - Possible Soutions:
+ - Possible Solutions:
          - Not release version (break CI/CD)
          - No way to access the feature
  - Decided upon solution:
@@ -53,7 +53,7 @@ oracle problems, path predicates, and fuzz testing.
 >Difficulty and cost of determining the correct output and input
 >
 >### Implicit oracle
->don’t crash, terminate in n minues, don’t leak secrets
+>don’t crash, terminate in n minutes, don’t leak secrets
 
 2 approaches - Think really hard and write down the tests or try random things and see what paths are covered
 
