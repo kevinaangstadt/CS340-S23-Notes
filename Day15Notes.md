@@ -33,10 +33,10 @@ Mutation operators → templates for replacing code
 ## What does it mean if a variant is not detected by the test suite?
 
 ## Test suite is not good?
-- Mutant is actually semantics preserving (did not change the outcome of the program) 
-- equivalent mutant programs that are semantically identical and this pass/fail same # of tests
+* Mutant is actually semantics preserving (did not change the outcome of the program) 
+* equivalent mutant programs that are semantically identical and this pass/fail same # of tests
 
-- This idea of automatically mutating software is based on the competent programmer hypothesis: 
+This idea of automatically mutating software is based on the competent programmer hypothesis: 
    * faults are syntactically small and can be corrected with a few keystrokes.
 
 - NB: But - not all bugs are small!
@@ -51,12 +51,14 @@ Mutation operators → templates for replacing code
 
 ## The Story so far…
 1.	Scripting → automate tasks
+
 2.	Version Control → collaborate and track changes in software
+
 3.	Testing → gain confidence/assure quality
 
 ## We want to automate all of the processes needed to take code from commits and move it into production
-- Production: code being run by uses.
-- The automated infinity loop lifecycle is called Continuous Integration/ Continuous Delivery CI/CD.
+* Production: code being run by uses.
+* The automated infinity loop lifecycle is called Continuous Integration/ Continuous Delivery CI/CD.
 
 ## Continuous Integration
 
