@@ -1,5 +1,8 @@
 # ***Day 8 Outline - 2/13/23***
 
+## **Overview**
+This lecture begins with a warmup and quick review of commit ettiquette. We continue on with learning about git repos and syncing changes. Next is the workflow for git repos and the beginning of quality assurance.
+
 ### **Today's warmup**
 - 2 branches
 - 3 commits to main
@@ -8,7 +11,7 @@
 
 ---
 
-### **Review - good ettique for commits**
+### **Review - good ettiquette for commits**
 1. Commit message should describe contents of changes
 2. Seperate out functionality/formatting changes
 3. Smaller commits
@@ -69,11 +72,13 @@ We won't be able to push
 
 ---
 
-### **Challege:** 
+### **Challenge:** 
 #### **How do we commit to a repo that does not grant us write permission**
-    Pull Request: Request for a developer to pull your commits into their upstream-repo
+> **Definition**
+>
+>**Pull Request**: Request for a developer to pull your commits into their upstream-repo
 
-FIXME: ADD FLOW CHART!!!
+![image](Day_8_flowchart.png)
 
 ---
 
@@ -92,9 +97,11 @@ FIXME: ADD FLOW CHART!!!
 Want to deliver high-quality software at low cost  
 How do we increase, asses, and assure software quality?
 
-    Quality Assurance: is the maintenance of a desired level of 
-    quality in a service or product, especially by means 
-    of attention to every step of the process of 
-    delivery or production.
+> **Definition**
+>
+>**Quality Assurance**: is the maintenance of a desired level of 
+>quality in a service or product, especially by means 
+>of attention to every step of the process of 
+>delivery or production.
 
 ![Alt Text](https://ih1.redbubble.net/image.679500044.5211/st,small,507x507-pad,600x600,f8f8f8.u4.jpg)
