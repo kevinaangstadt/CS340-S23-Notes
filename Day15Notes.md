@@ -3,6 +3,8 @@
 
 ## INTRODUCTION
 -The point of tests is to reveal and prevent bugs
+
+
 -Mutation Testing → Seed defects in the code and check which tests reveal the defects
 
 ## How do we seed these defects?
@@ -28,9 +30,11 @@ Mutation operators → templates for replacing code
 ----
 ## What does it mean if a variant is not detected by the test suite?
 
--Test suite is not good?
--Mutant is actually semantics preserving (did not change the outcome of the program) →equivalent mutant programs that are semantically identical and this pass/fail same # of tests
--This idea of automatically mutating software is based on the competent programmer hypothesis: faults are syntactically small and can be corrected with a few keystrokes
+   ## **Test suite is not good?**
+    -Mutant is actually semantics preserving (did not change the outcome of the program) 
+    -equivalent mutant programs that are semantically identical and this pass/fail same # of tests
+-This idea of automatically mutating software is based on the competent programmer hypothesis: 
+    -faults are syntactically small and can be corrected with a few keystrokes
 -NB: But - not all bugs are small!
 -Coupling effect hypothesis →Complex faults are combinations of small faults (high order mutant)
 
@@ -50,7 +54,8 @@ Mutation operators → templates for replacing code
 -Production: code being run by uses.
 -The automated infinity loop lifecycle is called Continuous Integration/ Continuous Delivery CI/CD
 
-## Continuous Integration
+## **Continuous Integration**
+#### Definition
 -Practice of integrating code changes into the main branch of a shaped repository often automatically testing each change on both commits and merges, and automatically building each version .
 -Push multiple times a day/ merge rebase into the main branch
 -Encourages best practices with commits
@@ -62,7 +67,7 @@ Mutation operators → templates for replacing code
 
 ## CONCLUSION
 
-## Benefits of CI
+## **Benefits of CI**
 
 -Reverts are not costly - only a few changes 
 -Integration bugs are detected early
@@ -70,8 +75,9 @@ Mutation operators → templates for replacing code
 -Always have “current” version of the code that is built
 -Immediate feedback or system guide impacts
 
-## Continuous Delivery
 
+## **Continuous Delivery**
+#### Definition
 -Process of frequently generating exports / builds of code from the repository that are ready to be deployed.
 -(Implement → merge → validate )  —>  CI
 -(Deploy to pre-prod → Spot checks → Deploy to prod) → CD
