@@ -1,6 +1,10 @@
 # **Lecture 27**
 **May 1, 2023**
 
+### **Overview** 
+In todays class we did course evaluations, then we went over the final presentation spec.
+With the remaining time we worked on the presentation with out group.
+
 ### **Todays topics**
 -course evaluations
 -Work on final presentaion
