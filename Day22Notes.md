@@ -1,6 +1,9 @@
 # Lecture Notes: Day 22
 ## Date: 04/10/2023
 
+### Overview
+Automatically and manually use the git bisect tools to find commits that have bugs. Setup ruby so we can use their commits in order to get a real world example of this. Also use phony for another example on using git bisect to run commits.
+
 ## Git Bisect
 Git Bisect is a tool that allows us to find the commit that introduced a bug in a project by performing a binary search through the commit history. This process involves identifying a known bad commit and a known good commit, and then checking out a middle commit between them to test if the bug is present or not. Based on the result, we can then eliminate half of the remaining commits and repeat the process until we find the faulty commit.
 
