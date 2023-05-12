@@ -1,5 +1,11 @@
 # **Lecture 2**
 
+## Overview
+- Within this class there are two different sections that we go over.
+- We first go through our presentations and faulty software and it's repercussions.
+- We then go through some notes about about how to connect to linux labs with some basic bash commands
+- we end with notes on for loops that will be continued in the next day's lecture
+
 ## Class presentations
 
  ### Problems caused by issues in software
