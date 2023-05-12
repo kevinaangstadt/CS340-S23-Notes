@@ -1,5 +1,12 @@
 # **Lecture 14 Notes, 3/6/23**
 
+## **Introduction**
+----
+#### Definition
+**Test suite quality** assesses the quality of a test suite (with respect to an external notion of utility) and allows test suites to be compared.
+#### Definition
+**Code coverage** is how much code is executed by a test suite.
+
 ## **Test Suite Quality Metrics**
 ----
 - Determine "how good" a test suite is compared to another test suite.
@@ -52,12 +59,16 @@
 
 ## **Kinds of Testing to Assess External Quality**
 ----
-- Alpha Testing -> Done by developers.
-- Beta Testing -> Done by external users.
+#### Definition
+- **Alpha Testing** -> Done by developers.
+
+#### Definition
+- **Beta Testing** -> Done by external users.
     - How does this information get back to the developer?
         - Bug report.
         - Automatic data collection and crash reports.
-- A/B Testing -> Release two variables of software
+#### Definition
+- **A/B Testing** -> Release two variables of software
 
 #### **Mutation Testing**
 - A seemingly unrelated question: How do you tests if a bloodhound is any good?
@@ -73,3 +84,11 @@
 #### Definition
 - **Mutation Analysis/Testing** is defined as intentionally seeding defects and counting how many are found.
     - It is only as good as the bugs that are seeded.
+## **Conclusion**
+----
+- Test suite quality metircs determines how good a test suite is in comparison to another test suite.
+- Test suite quality metrics gives us confidence in our test suite.
+- There are various forms of coverage such as:
+    - Line, branch, function, condition, and modified condition / decision coverage.
+- There are various forms of testing such as:
+    - Alpha, beta, A/B, and mutation testing.
