@@ -53,11 +53,21 @@ Run git bisect reset to exit the search.
 ## Automatically using Git Bisect
 Git Bisect can also be automated by using a script to perform the testing and marking of commits. This is useful when the testing process is time-consuming or requires human intervention. To automate Git Bisect, we need to write a script that returns a zero exit status if the bug is not present and a non-zero exit status if the bug is present. We can then use the following command to start the bisect process
 
+
 Run -- `git bisect start`
 Mark the "good" commit with 
 `git bisect good <commit>`
 Mark the "bad" commit with 
 `git bisect bad <commit>`
+=======
+Run `git bisect start`
+
+Mark the "good" commit with 
+`git bisect good <commit>`
+
+Mark the "bad" commit with 
+`git bisect bad <commit>`
+
 To automate the search
 `git bisect run <script>`
 
@@ -116,7 +126,8 @@ When dealing with a large number of test cases, it can be time-consuming to test
 
 In conclusion, Git Bisect is a powerful tool for identifying the commit that introduced a bug in a project. By using a binary search through the commit history, we can quickly identify the faulty commit and fix the bug. Additionally, by automating the process and minimizing test cases, we can save time and effort in the bug-fixing process.
 
+
 ## [Ethiopian legend]
 
-![Iconic!](https://drive.google.com/uc?id=1MDKcmBBsS14e6205UFVzBIuppkG57oAX)
+![Iconic !](https://drive.google.com/uc?id=1MDKcmBBsS14e6205UFVzBIuppkG57oAX)
 
